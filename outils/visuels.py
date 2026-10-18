@@ -64,7 +64,7 @@ li:before{{content:counter(n);position:absolute;left:0;top:0;width:64px;height:6
 .sw{{font-size:34px;color:{acc};font-weight:700}}
 </style></head><body><div class="p"><div class="top"></div><div class="c1"></div><div class="c2"></div>
 <div class="lab">{im.get('etiquette','')}</div><div class="body">{body}</div>{src}
-<div class="foot"><span class="n">Azimut Média</span><span class="sw">{im.get('pied','')}</span></div></div></body></html>'''
+<div class="foot"><span class="n">{im.get('marque','Azimut Média')}</span><span class="sw">{im.get('pied','')}</span></div></div></body></html>'''
 def main(spec_path):
     spec = json.load(open(spec_path, encoding='utf-8'))
     out = spec.get('dossier', 'sortie'); os.makedirs(out, exist_ok=True)
